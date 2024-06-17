@@ -1,13 +1,18 @@
-# Copyright (c) 2020, Rockchip Electronics Co., Ltd
-# Released under the MIT license (see COPYING.MIT for the terms)
+SOC_FAMILY = "rk356x"
 
-SOC_FAMILY ?= "rk3568"
-PREFERRED_VERSION_linux-rockchip ?= "5.10%"
-LINUXLIBCVERSION ?= "5.10-custom%"
+DEFAULTTUNE ?= "cortexa55"
 
-require conf/machine/include/rockchip-arm64-common.inc
+require conf/machine/include/soc-family.inc
+require conf/machine/include/arm/armv8-2a/tune-cortexa55.inc
+require conf/machine/include/rockchip-defaults.inc
+require conf/machine/include/rockchip-wic.inc
 
-MALI_GPU := "bifrost-g52"
-MALI_VERSION ?= "g2p0"
+KBUILD_DEFCONFIG ?= "rockchip_linux_defconfig"
+KERNEL_CLASSES = "kernel-fitimage"
+KERNEL_IMAGETYPE ?= "fitImage"
 
-RK_ISP_VERSION := "2.1"
+PREFERRED_PROVIDER_trusted-firmware-a = "rockchip-rkbin"
+PREFERRED_PROVIDER_optee-os = "rockchip-rkbin"
+
+UBOOT_SUFFIX ?= "itb"
+UBOOT_ENTRYPOINT ?= "0x06000000"

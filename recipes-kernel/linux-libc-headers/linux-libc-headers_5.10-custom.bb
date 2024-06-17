@@ -7,9 +7,9 @@ inherit auto-patch
 
 inherit local-git
 
-SRCREV = "72de5a560a44fb81549f1da325a1b3e323a7aaf7"
+SRCREV = "9dd12da47b3063f4d5f75153a54863342f3f8ba6"
 SRC_URI = " \
-	git://github.com/JeffyCN/mirrors.git;protocol=https;nobranch=1;branch=kernel-5.10-2022_01_10; \
+	git://github.com/radxa/kernel.git;protocol=https;branch=linux-5.10-gen-rkr4.1; \
 "
 
 S = "${WORKDIR}/git"
