@@ -5,7 +5,12 @@ SOC_FAMILY ?= "rk3588"
 PREFERRED_VERSION_linux-rockchip ?= "6.1%"
 LINUXLIBCVERSION ?= "6.1-custom%"
 
-require conf/machine/include/rockchip-arm64-common.inc
+DEFAULTTUNE ?= "cortexa76-cortexa55-crypto"
+
+require conf/machine/include/soc-family.inc
+require conf/machine/include/arm/armv8-2a/tune-cortexa76-cortexa55.inc
+require conf/machine/include/rockchip-defaults.inc
+require conf/machine/include/rockchip-wic.inc
 
 KBUILD_DEFCONFIG = "rk3588_linux_defconfig"
 
