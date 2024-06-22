@@ -1,2 +1,2 @@
 require u-boot-common.inc
-require u-boot-tools.inc
+require poky/meta/recipes-bsp/u-boot/u-boot-tools.inc
