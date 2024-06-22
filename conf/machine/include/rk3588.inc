@@ -13,6 +13,14 @@ require conf/machine/include/rockchip-defaults.inc
 require conf/machine/include/rockchip-wic.inc
 
 KBUILD_DEFCONFIG = "rk3588_linux_defconfig"
+KERNEL_CLASSES = "kernel-fitimage"
+KERNEL_IMAGETYPE ?= "fitImage"
+
+PREFERRED_PROVIDER_trusted-firmware-a = "rockchip-rkbin"
+PREFERRED_PROVIDER_optee-os = "rockchip-rkbin"
+
+UBOOT_SUFFIX ?= "itb"
+UBOOT_ENTRYPOINT ?= "0x06000000"
 
 MALI_GPU := "valhall-g610"
 MALI_VERSION ?= "g6p0"
