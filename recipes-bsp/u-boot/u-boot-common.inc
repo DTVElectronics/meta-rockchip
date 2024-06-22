@@ -7,7 +7,7 @@ SECTION = "bootloaders"
 DEPENDS += "flex-native bison-native python3-setuptools-native"
 
 LICENSE = "GPL-2.0-or-later"
-LIC_FILES_CHKSUM = "file://Licenses/README;md5=2ca5f2c35c8cc335f0a19756634782f1"
+LIC_FILES_CHKSUM = "file://Licenses/README;md5=a2c678cfd4a4d97135585cad908541c6"
 PE = "1"
 
 # We use the revision in order to avoid having to fetch it from the
