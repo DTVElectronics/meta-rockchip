@@ -12,7 +12,7 @@ PE = "1"
 
 # We use the revision in order to avoid having to fetch it from the
 # repo during parse
-SRCREV = "d82f6613b2b415a00640564e132e774057ce4f05"
+SRCREV = "de8bb89a2d59ef3f3fe367dc10fa71ffd4bac365"
 
 SRC_URI = "git://github.com/DTVElectronics/u-boot-radxa.git;protocol=https;branch=next-dev-v2024.03"
 
