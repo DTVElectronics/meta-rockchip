@@ -52,3 +52,6 @@ do_compile:append:rock2-square () {
 	fi
 }
 
+do_compile:append () {
+    oe_runmake -C ${S} O=${B}/${config} BL31=${DEPLOY_DIR_IMAGE}/bl31-rk3588.elf ROCKCHIP_TPL=${DEPLOY_DIR_IMAGE}/ddr-rk3588.bin u-boot.itb
+}
