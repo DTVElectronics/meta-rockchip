@@ -28,7 +28,6 @@ EXTRA_OEMAKE:append:rk3568 = " \
 EXTRA_OEMAKE:append:rk3588 = " \
 	BL31=${DEPLOY_DIR_IMAGE}/bl31-rk3588.elf \
 	ROCKCHIP_TPL=${DEPLOY_DIR_IMAGE}/ddr-rk3588.bin \
-	u-boot.itb \
 	"
 EXTRA_OEMAKE:append:rk3588s = " \
 	BL31=${DEPLOY_DIR_IMAGE}/bl31-rk3588.elf \
