@@ -12,6 +12,7 @@ SRC_URI = " \
 	file://${THISDIR}/files/cgroups.cfg \
 	file://${THISDIR}/files/wifi.cfg \
 	file://${THISDIR}/files/dtv_fixes.cfg \
+	file://${THISDIR}/files/no_werror.cfg \
 "
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
