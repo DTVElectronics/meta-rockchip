@@ -23,6 +23,7 @@ EXTRA_OEMAKE:append:rk3568 = " \
 EXTRA_OEMAKE:append:rk3588s = " \
 	BL31=${DEPLOY_DIR_IMAGE}/bl31-rk3588.elf \
 	ROCKCHIP_TPL=${DEPLOY_DIR_IMAGE}/ddr-rk3588.bin \
+	u-boot.itb \
 	"
 
 INIT_FIRMWARE_DEPENDS ??= ""
@@ -41,3 +42,4 @@ do_compile:append:rock2-square () {
 		cp ${B}/spl/${SPL_BINARY} ${B}
 	fi
 }
+
